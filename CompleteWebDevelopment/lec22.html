@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors & more designing</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            background-color: rgb(150, 184, 150);
+            padding: 34px;
+            width: 450px;
+            margin: auto;
+
+        }
+
+        .btn {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(255, 255, 255);
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+
+        .btn:hover{
+            /* color:white; */
+            background-color: rgb(238, 238, 238);
+            border: 2px solid rgb(66, 66, 66);
+        }
+
+        a {
+            /* remove border */
+            text-decoration: none;
+            color: black;
+            /* background-color:cyan; */
+        }
+
+        a:hover {
+            /* color: rgb(63, 5, 5); */
+            background-color: rgb(202, 151, 41);
+        }
+
+        a:visited {
+            background-color: rgb(249, 253, 0);
+        }
+
+        a:active{
+            background-color: rgba(31, 167, 230, 0.726);
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dicta maiores dolorum eum sed, illum tenetur
+            tempore, ea corporis recusandae possimus totam consequuntur ipsa accusantium iure. Odit quod voluptate
+            dolores distinctio veritatis enim?</p>
+        <a href="https://twitter.com" class="btn">Read More</a>
+        <button class="btn">Contact us</button>
+
+    </div>
+</body>
+
+</html>
