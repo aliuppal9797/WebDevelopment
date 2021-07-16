@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Function</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    
+
+    <script>
+        var str = "This is a string";
+        console.log(str);
+        // First occurance of a substring
+        var position = str.indexOf('is');
+        console.log(position);
+        
+        // Last occurance of a substring 
+        // string.indexOf('string');
+        position = str.lastIndexOf('is'); 
+        console.log(position);
+        
+        // Substring from a string
+        // string.slice(Starting Index, Ending Index-1);
+        // can take negative values too
+        var substr1 = str.slice(2, 4);  
+        console.log(substr1);
+        
+        // string.substring(Starting Index, Ending Index-1);  
+        // cannot take negative values
+        substr1 = str.substring(0, 5); 
+        console.log(substr1);
+        
+        // string.substr(Starting Index, number of characters);
+        // The number of charachter from a string
+        substr1 = str.substr(0, 3); 
+        console.log(substr1);
+
+        var replaced = str.replace('string', 'Ali');
+        console.log(str);
+        console.log(replaced);
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        var newString = str.concat('New String');
+        console.log(newString);
+
+
+        var strWithWhiteSpaces = "   this contains        white spaces      ";
+        console.log(strWithWhiteSpaces);
+        console.log(strWithWhiteSpaces.trim());
+
+        var char2 = str.charAt(8);
+        console.log(char2);
+        char2 = str.charCodeAt(8);
+        console.log(char2);
+
+        console.log(str[8]);
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
