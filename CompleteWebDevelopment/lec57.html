@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Events</title>
+    </head>
+    <style>
+        #btn{
+            padding: 10px 14px;
+            background-color: rgb(255, 0, 0);
+            border: 2px solid black;
+            font-weight: bold;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+<body>
+    <div class="container">
+        <h1>Paragraph</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur optio sit, ex autem libero fugit veritatis? Nobis eum quibusdam fugiat excepturi, saepe expedita fugit suscipit nostrum harum itaque pariatur aspernatur maiores dolor commodi voluptatum sit tenetur delectus, nulla iure distinctio natus consequuntur vel amet. Velit quod exercitationem, beatae repudiandae modi nemo reiciendis porro, temporibus odit non vel sequi nulla eaque, neque iure laboriosam laudantium minima tempore repellendus. Fuga architecto velit consequatur maiores labore porro similique perferendis earum doloribus repellat, illo animi, eaque, hic itaque distinctio corrupti consequuntur ut amet magnam veniam delectus? Facilis aliquam nobis ut. Tempora ea deserunt obcaecati minima aperiam perspiciatis, impedit saepe, dolorem eum distinctio provident, numquam reiciendis aliquid doloremque est tenetur vitae expedita officia cupiditate ad. Aliquam nesciunt placeat soluta commodi, tempore corrupti. Repudiandae consectetur veniam sed quas enim non, repellat, minima, doloremque ipsum temporibus magnam laboriosam aliquid nemo dicta vel obcaecati laudantium eligendi! Maxime vitae, eaque officiis rem eligendi et dolore facilis, dicta eos sapiente sed vel velit fugit repellat ex autem unde? Molestiae, laborum incidunt quo nostrum adipisci ratione, nam facere quas rem obcaecati, cupiditate ducimus harum fugit corrupti similique nulla alias odio. Consequuntur ipsam est, aut ducimus ad perspiciatis. Sit dolores a deleniti, sunt autem quisquam corrupti. Dolorum, nam harum rerum rem debitis, quasi deleniti fugiat nisi totam, voluptatibus temporibus maiores eum voluptate! Consequuntur, saepe quis incidunt repellendus voluptatem laboriosam vitae provident assumenda corrupti tempore maiores.</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    
+    <div>
+        <h2>Browser Events in Java Script</h2>
+        <h3>Mouse Events</h3>
+        <ol>
+        <li>Click</li>
+        <li>Context Menu</li>
+        <li>Mouse Over/Mouse Out</li>
+        <li>Mouse Down/Mouse Up</li>
+        <li>Mouse Move</li>
+    </ol>
+    
+    <h3>Form Events</h3>
+    <ol>
+        <li>Submit</li>
+        <li>Focus</li>
+        <li>DOMContentLoaded</li>
+    </ol>
+    
+    <h3>CSS Events</h3>
+    <ul>
+        <li>Transition End</li>
+    </ul>
+</div>
+    
+</body>
+<script>
+    let para = document.getElementById('para');
+    para.addEventListener('mouseover', function run(){
+        console.log('Mouse Inside');
+    });
+    para.addEventListener('mouseout', function run(){
+        console.log('Mouse went outside');
+    });
+
+    function toggleHide(){
+        let btn = document.getElementById('btn');
+        let para = document.getElementById('para');
+        if(para.style.display != 'none'){
+            para.style.display = 'none';
+        }else{
+            para.style.display = 'block';
+        }
+
+    }    
+</script>
+</html>
